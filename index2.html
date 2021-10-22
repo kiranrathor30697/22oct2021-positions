@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pure js property positions</title>
+    <style>
+
+    </style>
+
+    <script>
+
+    </script>
+</head>
+<body>
+    
+
+
+    <script>
+        // create element
+        var x = document.createElement('div');
+
+        x.setAttribute('class','box1');
+
+        var x = document.body.appendChild(x);
+        console.log(x);
+
+        var x1 = document.getElementsByClassName('box1');
+        console.log(x1[0]);
+        x1[0].style.width = "600px";
+        x1[0].style.height = "600px";
+        x1[0].style.margin = "auto";
+        x1[0].style.position = "relative";
+        x1[0].style.border = "3px solid #000";
+        console.log(x1[0]);
+
+        //1.create element
+        var y1 = document.createElement('div');
+
+        y1.setAttribute('class','b1');
+
+        x1[0].appendChild(y1);
+
+        var y1 = document.querySelector('.b1');
+        y1.style.width = "296px";
+        y1.style.height = "296px";
+        y1.style.backgroundColor = "green";
+        y1.style.position = "absolute";
+        y1.style.top = "0px";
+        y1.style.left = "0px";
+        y1.style.border = "3px solid #000";
+        console.log(y1);
+
+        //2.create element
+
+        var y2 = document.createElement('div');
+
+        y2.setAttribute('class','b2');
+
+        x1[0].appendChild(y2);
+
+        var y2 = document.querySelector('.b2');
+        y2.style.width = "296px";
+        y2.style.height = "296px";
+        y2.style.backgroundColor = "gold";
+        y2.style.position = "absolute";
+        y2.style.bottom = "0px";
+        y2.style.left = "0px";
+        y2.style.border = "3px solid #000";
+        console.log(y2);
+
+        //3.create element
+        var y3 = document.createElement('div');
+
+        y3.setAttribute('class','b1');
+
+        x1[0].appendChild(y3);
+
+        var y1 = document.querySelector('.b1');
+        y3.style.width = "296px";
+        y3.style.height = "296px";
+        y3.style.backgroundColor = "purple";
+        y3.style.position = "absolute";
+        y3.style.bottom = "0px";
+        y3.style.right = "0px";
+        y3.style.border = "3px solid #000";
+        console.log(y3);
+
+        //4.create element
+        var y4 = document.createElement('div');
+
+        y4.setAttribute('class','b4');
+
+        x1[0].appendChild(y4);
+
+
+        var y4 = document.querySelector('.b4');
+        y4.style.width = "296px";
+        y4.style.height = "296px";
+        y4.style.backgroundColor = "blue";
+        y4.style.position = "absolute";
+        y4.style.top = "0px";
+        y4.style.right = "0px";
+        y4.style.border = "3px solid #000";
+        console.log(y4);
+
+        //create element
+        var x11 = document.createElement('div');
+
+        x11.setAttribute('class','box2');
+
+        x1[0].appendChild(x11);
+        
+        console.log(x11);
+
+        var x2 = document.getElementsByClassName('box2');
+
+        x2[0].style.width = '597px';
+        x2[0].style.height = '597px';
+        x2[0].style.border = "3px solid #000";
+        x2[0].style.borderRadius = "597px";
+        x2[0].style.position = 'absolute';
+        x2[0].style.overflow = 'hidden';
+
+        console.log(x2[0]);
+
+        //create element
+        var a = document.createElement('div');
+        
+        a.setAttribute('class','b11');
+
+        x2[0].appendChild(a);
+
+        a.style.width = '296px';
+        a.style.height = '296px';
+        a.style.backgroundColor = 'aqua';
+        a.style.border = "3px solid #000";
+        a.style.position = 'absolute';
+        a.style.top = "0px";
+        a.style.right = "0px";
+       
+        console.log(a);
+
+        //create element
+        var a1 = document.createElement('div');
+        
+        a1.setAttribute('class','b12');
+
+        x2[0].appendChild(a1);
+
+        a1.style.width = '296px';
+        a1.style.height = '296px';
+        a1.style.backgroundColor = 'darkred';
+        a1.style.border = "3px solid #000";
+        a1.style.position = 'absolute';
+        a1.style.bottom = "0px";
+        a1.style.right = "0px";
+
+        console.log(a1);
+
+        //create element
+        var a2 = document.createElement('div');
+        
+        a2.setAttribute('class','b13');
+
+        x2[0].appendChild(a2);
+
+        a2.style.width = '296px';
+        a2.style.height = '296px';
+        a2.style.backgroundColor = 'dimgray';
+        a2.style.border = "3px solid #000";
+        a2.style.position = 'absolute';
+        a2.style.top = "0px";
+        a2.style.left = "0px";
+       
+        console.log(a3);
+
+        //create element
+        var a3 = document.createElement('div');
+        
+        a3.setAttribute('class','b14');
+
+        x2[0].appendChild(a3);
+
+        a3.style.width = '296px';
+        a3.style.height = '296px';
+        a3.style.backgroundColor = 'teal';
+        a3.style.border = "3px solid #000";
+        a3.style.position = 'absolute';
+        a3.style.bottom = "0px";
+        a3.style.left = "0px";
+       
+        console.log(a3);
+
+
+
+       
+
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
